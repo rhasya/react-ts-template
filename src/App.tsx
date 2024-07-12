@@ -1,8 +1,11 @@
+import { H1 } from '@/components/ui/Heading';
+import { Main } from '@/components/ui/Main';
+
 function App() {
   return (
-    <main className="container mx-auto">
-      <h1 className="my-8 text-3xl font-bold">Hello World!</h1>
-    </main>
+    <Main>
+      <H1 className="my-2">Hello World!</H1>
+    </Main>
   );
 }
 

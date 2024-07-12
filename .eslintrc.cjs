@@ -9,15 +9,25 @@ module.exports = {
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh"],
+  plugins: ["react-refresh", "import"],
   rules: {
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true }
     ],
-    "prettier/prettier": [
-      "error",
-      { endOfLine: "auto" }
-    ],
+    "import/order": [
+      "warn",
+      { 
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        alphabetize: { order: "asc" }
+      }
+    ]
   },
 };
