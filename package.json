@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
+    "format": "prettier --write src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/node": "^22.2.0",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react": "^4.2.1",
