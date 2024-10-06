@@ -11,7 +11,7 @@
     "format": "prettier --write src/**/*.{ts,tsx}"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
+    "class-variance-authority": "^0.7.0",
     "react": "^19.0.0-rc",
     "react-dom": "^19.0.0-rc"
   },
